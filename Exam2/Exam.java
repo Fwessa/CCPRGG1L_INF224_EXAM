@@ -420,6 +420,10 @@ public class Exam {
         f = 20;
         
         if (withdraw >= 1000) {
+            
+            leftsavings = amount - withdraw;
+            System.out.println("Savings left: " +  leftsavings);
+            
             a1 = withdraw / a;
             a2 = withdraw -= (a1 * 1000);
             b1 = a2/b;
@@ -442,11 +446,14 @@ public class Exam {
             totalbills = a1 + b1 + c1 + d1 + e1+ f1;
             System.out.println("Total bills: " + totalbills);
 
-            leftsavings = amount - withdraw;
-            System.out.println("Savings left: " +  leftsavings);
+          
             
 
         }else if (withdraw <= 1000) {
+            
+            leftsavings = amount - withdraw;
+            System.out.println("Savings left: " +  leftsavings );
+            
             a1 = withdraw / a;
             a2 = withdraw -= (a1 * 1000);
             b1 = a2/b;
@@ -468,9 +475,7 @@ public class Exam {
             totalbills = a1 + b1 + c1 + d1 + e1+ f1;
             System.out.println("Total bills: " + totalbills);
 
-            leftsavings = amount - withdraw;
-            System.out.println("Savings left: " +  leftsavings );
-        
+            
     
         scan.close();
     }
